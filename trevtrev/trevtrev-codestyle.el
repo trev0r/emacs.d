@@ -14,7 +14,7 @@
 (setq-default js-indent-level 2)
 
 ;; Python
-(setq-default py-indent-offset 2)
+(setq-default py-indent-offset 4)
 ;; XML
 (setq-default nxml-child-indent 2)
 
@@ -30,5 +30,7 @@
 (setq mode-require-final-newline nil)
 (setq require-final-newline nil)
 (global-ethan-wspace-mode 1)
+
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
 
 (provide 'trevtrev-codestyle)

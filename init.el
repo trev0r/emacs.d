@@ -62,6 +62,8 @@
 (setq backup-directory-alist
       `(("." . ,(expand-file-name (concat dotfiles-dir "bak")))))
 
+;; No lockfiles (careful now)
+(setq create-lockfiles nil)
 ;; Load custom settings
 (load custom-file 'noerror)
 
@@ -71,7 +73,7 @@
         trevtrev-codestyle
         trevtrev-defuns
         trevtrev-editing
-        trevtrev-defuns
+        trevtrev-flycheck
         trevtrev-ido
         trevtrev-magit
         trevtrev-nav
