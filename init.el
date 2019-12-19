@@ -79,6 +79,7 @@
         trevtrev-nav
         trevtrev-project
         trevtrev-python
+        trevtrev-rust
         trevtrev-theme
         ))
 
